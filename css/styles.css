@@ -464,7 +464,6 @@ ul {
     fill: var(--color-Cloud);
 }
 
-.footer-subcribe {}
 
 .footer-subscribe-text {
     font-weight: 500;
@@ -490,29 +489,38 @@ ul {
 }
 
 .subscribe-button {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
     height: 40px;
-    margin-top: 40px;
     background-color: var(--color-Iris);
     border: none;
     border-radius: 4px;
     color: var(--color-Main-Background);
     text-align: left;
     padding-left: 24px;
-    padding-right: 64px;
+    padding-right: 24px;
 }
 
 .send-svg {
-    position: absolute;
     width: 24px;
     height: 20px;
-    top: 10px;
-    right: 24px;
     fill: var(--color-Main-Background);
 }
 
 .subscribe-button:hover {
     cursor: pointer;
+}
+
+.footer-subscribe-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-form {
+    margin-top: 40px;
+    height: 40px;
 }
 
 /** footer */
@@ -636,11 +644,11 @@ ul {
 
 .modal {
     position: relative;
-    overflow: auto;
+    overflow: none;
     width: 100%;
     height: 100%;
     max-width: 408px;
-    max-height: 576px;
+    max-height: 584px;
     border-radius: 4px;
     background-color: var(--color-Main-Background);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -684,9 +692,7 @@ ul {
 }
 
 .modal-insides {
-    padding: 0 24px;
-    padding-top: 72px;
-    padding-bottom: 24px;
+    padding: 72px 24px;
 }
 
 .modal-title {
@@ -732,7 +738,7 @@ ul {
     position: absolute;
     margin: 0;
     left: 16px;
-    top: -2px;
+    top: 0px;
     width: 18px;
     height: 24px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -781,18 +787,31 @@ ul {
 }
 
 .modal-checkbox {
+    appearance: none;
+}
+
+.modal-checkbox-span {
+    display: inline-block;
     width: 16px;
     height: 16px;
     border: 1.25px solid var(--color-NavyBlue);
     border-radius: 2px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-checkbox:checked+.modal-checkbox-span {
+    background-image: url(../images/Vector.svg), linear-gradient(#404BBF, #404BBF);
+
 }
 
 .checkbox-text {
+    appearance: none;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.04em;
-    margin-left: 8px;
     color: #757575;
 }
 

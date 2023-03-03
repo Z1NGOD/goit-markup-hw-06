@@ -451,18 +451,28 @@
               </ul>
             </div>
           </div>
-          <label class="footer-subcribe" for="">
-            <p class="footer-subscribe-text">Subscribe</p>
-            <input class="subscribe-input" type="email" placeholder="E-mail" />
-          </label>
-          <button class="subscribe-button" type="submit">
-            Subscribe
-            <svg class="send-svg">
-              <use
-                href="./images/footer-subscribe-svg.svg#icon-icon-send"
-              ></use>
-            </svg>
-          </button>
+          <div class="footer-subscribe-container">
+            <form action="">
+              <label class="footer-subcribe" for="">
+                <p class="footer-subscribe-text">Subscribe</p>
+                <input
+                  class="subscribe-input"
+                  type="email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </form>
+            <form class="button-form" action="">
+              <button class="subscribe-button" type="submit">
+                Subscribe
+                <svg class="send-svg">
+                  <use
+                    href="./images/footer-subscribe-svg.svg#icon-icon-send"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -537,14 +547,16 @@
                   ></textarea>
                 </label>
               </div>
-
-              <label class="checkbox-container" for="checkbox">
-                <input class="modal-checkbox" type="checkbox" id="checkbox" />
-                <p class="checkbox-text">
-                  I accept the terms and conditions of the
-                  <a class="checkbox-link" href="">Privacy Policy</a>
-                </p>
-              </label>
+              <form action="">
+                <label class="checkbox-container checkbox-text" for="checkbox">
+                  <input class="modal-checkbox" type="checkbox" id="checkbox" />
+                  <span class="modal-checkbox-span"></span>
+                  <span class="checkbox-text-margin">
+                    I accept the terms and conditions of the
+                    <a class="checkbox-link" href="">Privacy Policy</a>
+                  </span>
+                </label>
+              </form>
 
               <div class="form-button-container">
                 <button class="form-button" type="submit">Send</button>
