@@ -451,26 +451,25 @@
               </ul>
             </div>
           </div>
-          <div class="footer-subscribe-container">
-            <form>
-              <label class="footer-subcribe">
-                <p class="footer-subscribe-text">Subscribe</p>
-                <input
-                  class="subscribe-input"
-                  type="email"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button class="subscribe-button" type="submit">
-                Subscribe
-                <svg class="send-svg">
-                  <use
-                    href="./images/footer-subscribe-svg.svg#icon-icon-send"
-                  ></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+
+          <form class="footer-subscribe-container">
+            <label class="footer-subcribe footer-subscribe-text">
+              Subscribe
+              <input
+                class="subscribe-input"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="send-svg">
+                <use
+                  href="./images/footer-subscribe-svg.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -488,76 +487,74 @@
             <h2 class="modal-title">
               Leave your contacts and we will call you back
             </h2>
-            <div class="modal-inputs">
-              <div class="inputs">
-                <label class="input-container inputs-text" for="user-name">
-                  Name
-                  <input
-                    class="input-changes"
-                    type="text"
-                    id="user-name"
-                    name="user-name"
-                  />
-                  <svg class="form-svg">
-                    <use href="./images/modal-svgs.svg#icon-person-black"></use>
-                  </svg>
-                </label>
-              </div>
 
-              <div class="inputs">
-                <label class="input-container inputs-text" for="user-tel">
-                  Phone
-                  <input
-                    class="input-changes"
-                    type="tel"
-                    id="user-tel"
-                    name="user-tel"
-                  />
-                  <svg class="form-svg">
-                    <use href="./images/modal-svgs.svg#icon-phone-black"></use>
-                  </svg>
-                </label>
-              </div>
-
-              <div class="inputs">
-                <label class="input-container inputs-text" for="user-email">
-                  Email
-                  <input
-                    class="input-changes"
-                    type="email"
-                    id="user-email"
-                    name="user-email"
-                  />
-                  <svg class="form-svg">
-                    <use href="./images/modal-svgs.svg#icon-email-black"></use>
-                  </svg>
-                </label>
-              </div>
-
-              <div class="inputs">
-                <label for="user-comment">
-                  <p class="inputs-text">Comment</p>
-                  <textarea
-                    class="textarea-changes"
-                    name=""
-                    id="user-comment"
-                    placeholder="Text input"
-                  ></textarea>
-                </label>
-              </div>
-              <form action="">
-                <label class="checkbox-container checkbox-text" for="checkbox">
-                  <input class="modal-checkbox" type="checkbox" id="checkbox" />
-                  <span class="modal-checkbox-span"></span>
-                  <span class="checkbox-text-margin">
-                    I accept the terms and conditions of the
-                    <a class="checkbox-link" href="">Privacy Policy</a>
-                  </span>
-                </label>
-              </form>
-
-              <button class="form-button" type="submit">Send</button>
+            <div class="inputs">
+              <label class="input-container inputs-text" for="user-name">
+                Name
+                <input
+                  class="input-changes"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                />
+                <svg class="form-svg">
+                  <use href="./images/modal-svgs.svg#icon-person-black"></use>
+                </svg>
+              </label>
             </div>
+
+            <div class="inputs">
+              <label class="input-container inputs-text" for="user-tel">
+                Phone
+                <input
+                  class="input-changes"
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                />
+                <svg class="form-svg">
+                  <use href="./images/modal-svgs.svg#icon-phone-black"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="inputs">
+              <label class="input-container inputs-text" for="user-email">
+                Email
+                <input
+                  class="input-changes"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                />
+                <svg class="form-svg">
+                  <use href="./images/modal-svgs.svg#icon-email-black"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="inputs">
+              <label for="user-comment">
+                <span class="inputs-text">Comment</span>
+                <textarea
+                  class="textarea-changes"
+                  name="user-comment"
+                  id="user-comment"
+                  placeholder="Text input"
+                ></textarea>
+              </label>
+            </div>
+
+            <label class="checkbox-container checkbox-text" for="checkbox">
+              <input class="modal-checkbox" type="checkbox" id="checkbox" />
+              <span class="modal-checkbox-span"></span>
+              <span class="checkbox-text-margin">
+                I accept the terms and conditions of the
+                <a class="checkbox-link" href="">Privacy Policy</a>
+              </span>
+            </label>
+
+            <button class="form-button" type="submit">Send</button>
           </form>
         </div>
       </div>
